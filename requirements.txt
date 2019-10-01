@@ -1,4 +1,4 @@
-Scrapy
+Scrapy3
 carrot
 scrapy-rabbitmq-publisher
 Pillow
