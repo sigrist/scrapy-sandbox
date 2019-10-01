@@ -11,7 +11,7 @@
 import os
 
 BOT_NAME = 'mercadolivre'
-LOG_LEVEL = 'DEBUG'
+
 SPIDER_MODULES = ['mercadolivre.spiders']
 NEWSPIDER_MODULE = 'mercadolivre.spiders'
 
@@ -29,7 +29,7 @@ RABBITMQ_QUEUE = "item"
 #USER_AGENT = 'mercadolivre (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+# ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -43,7 +43,7 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 1
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-COOKIES_ENABLED = False
+# COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -77,7 +77,7 @@ COOKIES_ENABLED = False
 # # 'scrapy_rabbitmq_publisher.pipelines.RabbitMQItemPublisherPipeline': 1,
 ITEM_PIPELINES = {    
     'scrapy.pipelines.images.ImagesPipeline': 1,
-    'scrapy.pipelines.files.FilesPipeline': 1
+    'scrapy.pipelines.files.FilesPipeline': 2   
 }
 FILES_STORE = '/opt/images'
 IMAGES_STORE = '/opt/images'

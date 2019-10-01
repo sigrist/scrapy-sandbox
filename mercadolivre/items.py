@@ -11,6 +11,8 @@ import scrapy
 class MercadolivreItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    sourceId = scrapy.Field()
+    title = scrapy.Field()
     files_urls = scrapy.Field()
-    images_urls = scrapy.Field()
-    pass
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
